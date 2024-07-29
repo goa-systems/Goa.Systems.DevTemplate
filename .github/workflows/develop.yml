@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a multi-line script
         run: |
-          echo "Building version $(cat version) to be deployed to $HOST_DEVELOP"
+          echo "Building version $(cat version) to be deployed to ${{ vars.HOST_DEVELOP }}"
